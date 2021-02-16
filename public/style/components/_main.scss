@@ -1,0 +1,58 @@
+.main-home {
+    .nav-pills {
+        .nav-link {
+            color: #dddd;
+
+            &.active {
+                background-color: #2B50B4;
+                color: white;
+            }
+        }
+    }
+
+    .subtitle-text {
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 34px;
+        color: #d1d1d1;
+    }
+
+    .card {
+        margin-top: 200px;
+        background: #ffffff;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+
+        .card-body {
+            text-align: left !important;
+
+            .title-card {
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 29px;
+
+                color: #000000;
+            }
+
+            .subtitle-card {
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 20px;
+
+                color: #000000;
+            }
+        }
+    }
+
+    .btn-ebook {
+        @include button-variant(#2b50b4, transparent);
+        border-radius: 4px;
+        color: white !important;
+    }
+
+    .btn-tutorial {
+        @include button-variant(#232235, transparent);
+        border-radius: 5px;
+        color: #8481ab !important;
+    }
+}

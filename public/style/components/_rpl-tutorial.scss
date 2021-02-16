@@ -1,0 +1,30 @@
+.rpl-tutorial {
+  h5 {
+    font-family: "Lora", sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 46px;
+    color: #322f56;
+  }
+
+  .text-muted {
+    line-height: 28px;
+  }
+
+  .btn-tutorial {
+    @include button-variant(#244295, transparent);
+  }
+
+  @include media-breakpoint-down(md) {
+    h5,
+    p {
+      text-align: center;
+    }
+  }
+
+  // @include media-breakpoint-down(md) {
+  //   .btn-tutorial {
+  //     margin-left: 32%;
+  //   }
+  // }
+}

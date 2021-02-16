@@ -1,0 +1,113 @@
+.rpl-bahasa {
+  h5 {
+    font-family: "Lora", sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 46px;
+    color: #322f56;
+  }
+
+  .header-title {
+    @include media-breakpoint-up(lg) {
+      margin-top: 100px;
+    }
+  }
+
+  .component-bahasa {
+    margin-bottom: 50px;
+
+    @include media-breakpoint-down(md) {
+      img {
+        max-height: 60px;
+      }
+    }
+  }
+
+  .title-bahasa {
+    @include media-breakpoint-down(md) {
+      margin-left: 20px !important;
+    }
+  }
+
+  .title-bahasa.html {
+    @include media-breakpoint-down(md) {
+      margin-left: 8px !important;
+    }
+  }
+
+  .title-bahasa.css {
+    @include media-breakpoint-down(md) {
+      margin-left: 15px !important;
+    }
+  }
+
+  .title-bahasa.js {
+    @include media-breakpoint-down(md) {
+      margin-left: 1px !important;
+    }
+  }
+
+  .title-bahasa.php {
+    @include media-breakpoint-down(md) {
+      margin-left: 20px !important;
+    }
+  }
+
+  .title-bahasa.bootstrap {
+    @include media-breakpoint-down(md) {
+      margin-left: 1px !important;
+    }
+  }
+
+  .title-bahasa.laravel {
+    @include media-breakpoint-down(md) {
+      margin-left: 10px !important;
+    }
+  }
+
+  .title-bahasa.jquery {
+    @include media-breakpoint-down(md) {
+      margin-left: 12px !important;
+    }
+  }
+
+  .title-bahasa.phyton {
+    @include media-breakpoint-down(md) {
+      margin-left: 11px !important;
+    }
+  }
+
+  .title-bahasa.codeigniter {
+    @include media-breakpoint-down(md) {
+      margin-left: 0 !important;
+    }
+  }
+
+  //   .title-bahasa {
+  //     margin-bottom: 40px;
+  //     font-weight: normal;
+  //     font-size: 18px;
+  //     line-height: 22px;
+  //     color: #000000;
+  //   }
+}
+
+.rpl-ebook {
+  margin-top: 150px;
+}
+
+.rpl-tools {
+  margin-top: 150px;
+}
+
+.rpl-tutorial {
+  margin-top: 150px;
+}
+
+.rpl-projects {
+  margin-top: 150px;
+}
+
+.rpl-achievement {
+  margin-top: 150px;
+}

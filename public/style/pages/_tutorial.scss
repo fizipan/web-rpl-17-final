@@ -1,0 +1,107 @@
+.page-content-tutorial {
+    margin-top: -150px;
+
+    @include media-breakpoint-down(md) {
+        margin-top: -70px;
+    }
+
+    h5 {
+        font-family: "Lora", sans-serif;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 46px;
+        color: #322f56;
+    }
+
+    .btn-see-more {
+        @include button-variant(white, transparent);
+        border-color: #e5e5e5;
+        color: #a8a8a8;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 17px;
+    }
+
+    .component-tutorial {
+        &:hover {
+            text-decoration: none;
+        }
+
+        .card {
+            margin-bottom: 80px;
+            width: 100%;
+            height: 250px;
+            background: #ffffff;
+            border-radius: 9px;
+            transition: all 300ms ease-in-out;
+
+            &:hover {
+                box-shadow: 4px 15px 25px rgba(0, 0, 0, 0.07);
+            }
+
+            .tutorial-thumbnail {
+                width: 100%;
+                height: 100%;
+                position: relative;
+                overflow: hidden;
+                border-radius: 8px;
+                z-index: 1;
+
+                .icon-eye {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-color: rgba(0, 0, 0, 0.7);
+                    opacity: 0;
+                    border-radius: 8px;
+                    transition: 0.3s;
+                }
+
+                .tutorial-image {
+                    width: 100%;
+                    height: 100%;
+
+                    background-color: #ddd;
+                    background-position: center;
+                    object-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    border-radius: 8px;
+                    transition: all 0.3s ease;
+                }
+            }
+
+            .title-tutorial {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 30px;
+                color: #000000;
+            }
+
+            .subtitle-tutorial {
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 17px;
+                color: #000000;
+            }
+
+            .icon-free {
+                width: 51px;
+                height: 23px;
+            }
+
+            &:hover,
+            &:focus {
+                .tutorial-image {
+                    transform: scale(1.1);
+                }
+
+                .icon-eye {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

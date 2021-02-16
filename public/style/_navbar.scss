@@ -1,0 +1,95 @@
+.navbar-rpl {
+    padding-top: 18px;
+
+    @include media-breakpoint-down(md) {
+        background-color: white !important;
+        margin-bottom: 40px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-toggler-icon {
+        @include media-breakpoint-down(md) {
+            color: inherit;
+        }
+    }
+
+    .profile-picture {
+        max-height: 20px;
+    }
+
+    .nav-item {
+        .nav-divider {
+            background-color: #dddddd;
+            width: 1px;
+            height: calc(100% - 8px);
+            display: inline-block;
+            margin: 4px 1.25rem;
+        }
+
+        .btn-login {
+            @include button-variant(#244295, transparent);
+            font-size: 14px;
+
+            @include media-breakpoint-up(lg) {
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+        }
+
+        .nav-link {
+            @include media-breakpoint-up(lg) {
+                margin-right: 20px;
+                margin-left: 20px;
+                color: white !important;
+                font-size: 14px;
+
+                &:hover {
+                    color: #dddddd !important;
+                }
+
+                &.active {
+                    color: coral !important;
+                }
+            }
+
+            @include media-breakpoint-down(md) {
+                color: black !important;
+
+                &:hover,
+                &.active {
+                    color: coral !important;
+                }
+
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+.navbar-fixed-top.scrolled {
+    .nav-item {
+        .nav-link {
+            color: black !important;
+
+            @include media-breakpoint-up(lg) {
+
+                &:hover,
+                &.active {
+                    border-bottom: 1px solid black;
+                }
+            }
+
+            @include media-breakpoint-down(md) {
+
+                &:hover,
+                &.active {
+                    color: coral !important;
+                }
+            }
+        }
+    }
+
+    background-color: white !important;
+    transition: background-color 200ms linear;
+    padding-top: 0;
+}
